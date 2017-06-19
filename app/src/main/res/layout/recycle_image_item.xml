@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="110dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout
+        android:id="@+id/img_relative"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/img_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:padding="1dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/img_relative"
+        android:layout_height="6dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/selected_img_bg"
+        android:visibility="visible"
+        android:background="@color/colorPrimary">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_cancel" />
+</RelativeLayout>
